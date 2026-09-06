@@ -80,7 +80,7 @@ const ContactForm = () => {
   return (
     <form onSubmit={handleSubmit} className="p-[2rem]">
       <div className="flex flex-col mb-5">
-        <label className="text-xl text-secondary font-jakarta font-bold mb-2">
+        <label className="text-xl text-text font-jakarta font-bold mb-2">
           Name
         </label>
 
@@ -88,19 +88,19 @@ const ContactForm = () => {
           type="text"
           id="name"
           name="name"
-          className="bg-primary border border-tertiary/30 rounded-md p-3 font-figtree"
+          className="bg-background border border-primary/30 rounded-md p-3 font-figtree"
           value={formData.name}
           onChange={handleChange}
           required
         />
 
-        <span className="text-tertiary font-figtree">
+        <span className="text-text/40 font-figtree">
           Please provide your name.
         </span>
       </div>
 
       <div className="flex flex-col mb-5">
-        <label className="text-xl text-secondary font-jakarta font-bold mb-2">
+        <label className="text-xl text-text font-jakarta font-bold mb-2">
           Email
         </label>
 
@@ -108,38 +108,38 @@ const ContactForm = () => {
           type="email"
           id="email"
           name="email"
-          className="bg-primary border border-tertiary/30 rounded-md p-3 font-figtree"
+          className="bg-background border border-primary/30 rounded-md p-3 font-figtree"
           value={formData.email}
           onChange={handleChange}
           required
         />
 
-        <span className="text-tertiary font-figtree">
+        <span className="text-text/40 font-figtree">
           Please provide your email address.
         </span>
       </div>
 
       <div className="flex flex-col mb-5">
-        <label className="text-xl text-secondary font-jakarta font-bold mb-2">
+        <label className="text-xl text-text font-jakarta font-bold mb-2">
           Message
         </label>
 
         <textarea
           id="message"
           name="message"
-          className="bg-primary border border-tertiary/30 rounded-md p-3 font-figtree"
+          className="bg-background border border-primary/30 rounded-md p-3 font-figtree"
           rows="5"
           value={formData.message}
           onChange={handleChange}
           required
         />
 
-        <span className="text-tertiary font-figtree">
+        <span className="text-text/40 font-figtree">
           Please provide a message.
         </span>
       </div>
 
-      <button type="submit" disabled={isLoading} className="button-accent w-full flex justify-center items-center gap-1 px-6 py-2 lg:text-xl font-bold">
+      <button type="submit" disabled={isLoading} className="button-primary w-full flex justify-center items-center gap-1 px-6 py-2 lg:text-xl font-bold">
         {isLoading ? ( 
           "Sending..." 
           ) : (
