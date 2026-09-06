@@ -5,7 +5,7 @@ const SectionHeader = ({ title, subtitle }) => {
         {title}
       </h2>
       <div className="h-[4px] w-[100px] rounded-full bg-accent mb-3 md:mb-6 mt-3 mx-auto"></div>
-      <p className="text-center text-md text-tertiary font-light font-figtree">
+      <p className="text-center text-md text-text font-light font-figtree">
         {subtitle}
       </p>
       

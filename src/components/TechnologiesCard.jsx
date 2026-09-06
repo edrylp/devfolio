@@ -27,7 +27,7 @@ const TechStackCard = ({ technology }) => {
       <div className="flex items-center justify-center">
         <Icon className={`text-[4rem] ${color} ${background ?? "bg-transparent"}`} />
       </div>
-      <p className="text-center text-tertiary font-figtree m-0">
+      <p className="text-center text-text font-figtree m-0">
         {technology.name}
       </p>
     </div>
