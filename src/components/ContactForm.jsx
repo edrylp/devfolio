@@ -78,7 +78,7 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="p-[2rem]">
+    <form onSubmit={handleSubmit} className="p-8">
       <div className="flex flex-col mb-5">
         <label className="text-xl text-text font-jakarta font-bold mb-2">
           Name

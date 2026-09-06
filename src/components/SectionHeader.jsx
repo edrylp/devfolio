@@ -1,6 +1,6 @@
 const SectionHeader = ({ title, subtitle }) => {
   return (
-    <div className="mb-[1.5rem] md:mb-[3rem]">
+    <div className="mb-6 md:mb-12">
       <h2 className="text-3xl md:text-5xl text-center font-jakarta font-extrabold ">
         {title}
       </h2>

@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa";
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="group relative mx-auto flex h-full w-full flex-col overflow-hidden rounded-xl bg-background p-[1px] transition-all duration-300 hover:shadow-xl">
+    <div className="group relative mx-auto flex h-full w-full flex-col overflow-hidden rounded-xl bg-background p-px transition-all duration-300 hover:shadow-xl">
 
       {/* Gradient Border */}
       <div className="absolute inset-0 rounded-md bg-linear-primary-accent opacity-70 transition-opacity duration-300 group-hover:opacity-100" />

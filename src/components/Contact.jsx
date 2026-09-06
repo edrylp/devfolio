@@ -15,7 +15,7 @@ const Contact = () => {
       <div className="px-5 md:px-0">
         <div className="grid grid-cols-1 md:grid-cols-12 border border-primary/30 rounded-lg overflow-hidden">
           {/* Left Side */}
-          <div className="col-span-5 flex flex-col gap-4 p-[2rem] border-b border-primary/30 md:border-b-0 md:border-r justify-center">
+          <div className="col-span-5 flex flex-col gap-4 p-8 border-b border-primary/30 md:border-b-0 md:border-r justify-center">
             <div className="flex justify-between items-center">
               <span className="text-3xl text-accent font-inconsolata uppercase">
                 Feedback Loop
