@@ -31,7 +31,7 @@ const Navbar = () => {
         className="fixed top-0 z-50 w-full lg:shadow-md bg-background lg:bg-background"
         id="mynavbar"
       >
-        <div className="container mx-auto xl:max-w-[1300px] flex min-h-16 items-center justify-between px-4 lg:px-0">
+        <div className="container mx-auto xl:max-w-325 flex min-h-16 items-center justify-between px-4 lg:px-0">
           <Link
             to="/"
             className="text-2xl lg:text-[1.6rem] text-primary font-jakarta font-extrabold"
@@ -46,7 +46,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation Links */}
-          <div className="hidden lg:block lg:flex lg:items-center lg:justify-between lg:gap-6">
+          <div className="hidden lg:flex lg:items-center lg:justify-between lg:gap-6">
             <ul className="flex items-center gap-4 font-semibold">
               <NavLinks activeSection={activeSection}/>
             </ul>

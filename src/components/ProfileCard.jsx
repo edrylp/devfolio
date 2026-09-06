@@ -9,7 +9,7 @@ const ProfileCard = () => {
       <div className="flex h-full flex-col items-center justify-center text-center animate-[fadeInUp_1s_ease]">
         <div
             className="mb-5
-            size-[250px]
+            size-62.5
             overflow-hidden
             rounded-full
             border-[3px] border-accent/40

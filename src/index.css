@@ -100,7 +100,7 @@
     @apply
     container
     mx-auto
-    xl:max-w-[1300px]
+    xl:max-w-325
     py-12
     md:py-24
     lg:py-40
@@ -159,20 +159,20 @@
   .icon-link {
     @apply 
     p-1
-    flex size-[38px]
+    flex size-9.5
     items-center justify-center
     rounded-full
     border border-primary/50
     text-primary/80
     transition-all duration-250
-    hover:-translate-y-[3px]
+    hover:-translate-y-0.75
     hover:border-secondary
     hover:text-secondary
   }
 
   .nav-link {
     @apply
-    block
+    flex
     text-lg
     text-text
     font-figtree
@@ -186,7 +186,7 @@
     lg:rounded-none
     py-3 px-5
     lg:p-0
-    flex items-center 
+    items-center 
     gap-4
   }
 

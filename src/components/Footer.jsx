@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="w-full">
-      <div className="container mx-auto flex xl:max-w-[1300px] min-h-16 items-center justify-between px-6 md:px-0">
+      <div className="container mx-auto flex xl:max-w-325 min-h-16 items-center justify-between px-6 md:px-0">
         
         {/* Copyright */}
         <p className="font-figtree text-text/60 md:text-lg">
