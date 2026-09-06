@@ -33,40 +33,42 @@ const ProjectCard = ({ project }) => {
                 </span>
               ))}
           </div>
-
-          {/* Title */}
-          <h3 className="font-figtree text-xl font-semibold leading-none tracking-tight text-primary">
-            {project.title}
-          </h3>
           
-          {/* Description */}
-          <p className="mt-2.5 flex-1 font-figtree text-sm leading-relaxed text-text/70">
-            {project.description}
-          </p>
+          <div className="pb-6 pt-4">
+            {/* Title */}
+            <h3 className="font-figtree text-xl font-semibold leading-none tracking-tight text-primary">
+              {project.title}
+            </h3>
+            
+            {/* Description */}
+            <p className="mt-2.5 flex-1 font-figtree text-sm leading-relaxed text-text/70">
+              {project.description}
+            </p>
+          </div>
+        
+          {/* Buttons */}
+          <div className="mt-auto flex justify-between gap-6">
+            <a
+              href={project.code}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button-tertiary px-4 py-2 text-sm gap-2 "
+            >
+              View Code
+              <FaGithub className="h-4 w-4" />
+            </a>
+
+            <a
+              className="button-primary px-4 py-2 text-sm gap-1 "
+              href={project.demo}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Site
+              <ArrowUpRight className="h-5 w-5" />
+            </a>
+          </div>
         </div>
-
-      {/* Buttons */}
-      <div className="mt-auto flex gap-4 p-6 pt-0">
-        <a
-          className="button-secondary w-full gap-2 px-4 py-2 font-semibold"
-          href={project.code}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View Code
-          <FaGithub  />
-        </a>
-
-        <a
-          className="button-primary w-full gap-1 px-4 py-2 font-semibold"
-          href={project.demo}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Live Demo
-          <ArrowUpRight />
-        </a>
-      </div>
       </div>
     </div>
   );
