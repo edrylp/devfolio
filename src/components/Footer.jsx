@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="container mx-auto flex xl:max-w-[1300px] min-h-16 items-center justify-between px-6 md:px-0">
         
         {/* Copyright */}
-        <p className="font-figtree text-secondary md:text-lg">
+        <p className="font-figtree text-text/60 md:text-lg">
           &copy; 2026 Edryl Palinis
         </p>
 
@@ -17,7 +17,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub Profile"
-            className="text-secondary transition-colors hover:text-accent"
+            className="text-text/60 transition-colors hover:text-primary"
           >
             <svg
               className="h-8 w-8"
@@ -38,7 +38,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn Profile"
-            className="text-secondary transition-colors hover:text-accent"
+            className="text-text/60 transition-colors hover:text-primary"
           >
             <svg
               className="h-8 w-8"

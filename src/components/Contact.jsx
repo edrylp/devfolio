@@ -13,9 +13,9 @@ const Contact = () => {
       </div>
 
       <div className="px-5 md:px-0">
-        <div className="grid grid-cols-1 md:grid-cols-12 border border-tertiary/30 rounded-lg overflow-hidden">
+        <div className="grid grid-cols-1 md:grid-cols-12 border border-primary/30 rounded-lg overflow-hidden">
           {/* Left Side */}
-          <div className="col-span-5 flex flex-col gap-4 p-[2rem] border-b border-tertiary/30 md:border-b-0 md:border-r justify-center">
+          <div className="col-span-5 flex flex-col gap-4 p-[2rem] border-b border-primary/30 md:border-b-0 md:border-r justify-center">
             <div className="flex justify-between items-center">
               <span className="text-3xl text-accent font-inconsolata uppercase">
                 Feedback Loop
@@ -23,14 +23,14 @@ const Contact = () => {
               <BsChatLeftQuote className="text-3xl text-accent" />
             </div>
 
-            <p className="font-figtree text-tertiary">
+            <p className="font-figtree text-text">
               I genuinely love feedback, especially the kind that helps me get
               better. If something here didn't work the way you expected, felt
               off, or you just have thoughts to share, I'd really appreciate
               hearing them.
             </p>
 
-            <p className="font-figtree text-tertiary">
+            <p className="font-figtree text-text">
               I'm always open to new opportunities and collaborations. If you'd like to work together or have an opportunity to discuss, feel free to reach out!
             </p>
           </div>
