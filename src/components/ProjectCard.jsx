@@ -55,14 +55,14 @@ const ProjectCard = ({ project }) => {
               href={project.code}
               target="_blank"
               rel="noopener noreferrer"
-              className="button-tertiary px-4 py-2 text-sm gap-2 "
+              className="button-secondary px-4 py-2 text-sm gap-2"
             >
               View Code
               <FaGithub className="h-4 w-4" />
             </a>
 
             <a
-              className="button-primary px-4 py-2 text-sm gap-1 "
+              className="button-primary px-4 py-2 text-sm gap-1 hover:translate-x-0.5 hover:-translate-y-0.5 active:translate-x-0 active:translate-y-0"
               href={project.demo}
               target="_blank"
               rel="noopener noreferrer"

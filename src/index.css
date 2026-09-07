@@ -109,51 +109,35 @@
 }
 
 @layer components {
-  .button-secondary {
-    @apply
-    flex justify-center items-center
-    rounded-md
-    text-center
-    font-figtree
-    text-text
-    hover:text-secondary
-    bg-secondary/40
-    hover:bg-background 
-    border border-transparent
-    hover:border hover:border-secondary 
-    transition-colors
-  }
-
   .button-primary {
     @apply
     flex justify-center items-center
-    rounded-md
+    rounded-lg
     text-center
     font-figtree
     text-background
     bg-primary
     border border-transparent
-    hover:translate-x-1
-    hover:-translate-y-1
-    hover:shadow-[0_0_20px_var(--primary)]
-    active:translate-x-0
-    active:translate-y-0
-    transition-transform 
+    hover:shadow-[0_0_10px_var(--primary)]
+    active:translate-y-0.5
+    transition-all 
     duration-300 
   }
 
-  .button-tertiary {
+  .button-secondary {
     @apply
     flex justify-center items-center
-    rounded-md
+    rounded-lg
     text-center 
     font-figtree
     text-text
     hover:text-accent
     bg-primary/5 
     border border-primary/20 
-    hover:border-accent/50  
+    hover:border-accent/50
+    active:translate-y-0.5  
     transition-all
+    duration-300
   }
 
   .icon-link {
