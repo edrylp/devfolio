@@ -2,7 +2,10 @@ const LandingText = () => {
   return (
     <div className="col-span-12 md:col-span-7 lg:col-span-9 mx-auto mt-12 md:mt-0">
       <div className="md:pr-8">
-        <h1>Full Stack Web Developer</h1>
+        <h1 className="flex flex-col">
+          <span>Full Stack</span>
+          <span>Web Developer<span>.</span></span>
+        </h1>
 
         <div
           className="mb-6
