@@ -10,7 +10,7 @@ const socialIcons = {
 
 const SocialLinks = () => (
   
-  <div className="flex gap-3.5 md:mt-5">
+  <div className="flex gap-3.5">
     {socials.map((social) => {
       const Icon = socialIcons[social.icon]
 
