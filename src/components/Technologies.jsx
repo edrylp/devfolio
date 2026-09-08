@@ -5,7 +5,7 @@ import SectionHeader from "./SectionHeader.jsx";
 const TechStack = () => {
   return (
     
-    <section id="tools">
+    <section id="tools" className="scroll-mt-10">
 
       <div >
         <SectionHeader

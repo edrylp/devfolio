@@ -4,7 +4,7 @@ import SectionHeader from "./SectionHeader";
 
 const Projects = () => {
   return (
-    <section id="projects">
+    <section id="projects" className="scroll-mt-10">
       <div>
         <SectionHeader
           title="Selected Work"
