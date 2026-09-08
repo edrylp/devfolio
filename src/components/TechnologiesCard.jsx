@@ -11,7 +11,7 @@ const techIcons = {
   AWS: { icon: FaAws, color: "text-[#FF9900]" },
   JavaScript: { icon: SiJavascript, color: "text-[#F7DF1E]", background: "bg-black" },
   MongoDB: { icon: SiMongodb, color: "text-[#47A248]" },
-  "Express.js": { icon: SiExpress, color: "text-[#000000]" },
+  "Express.js": { icon: SiExpress, color: "text-text" },
   Postman: { icon: SiPostman, color: "text-[#FF6C34]" },
   "Tailwind CSS": { icon: SiTailwindcss, color: "text-[#06B6D4]" }
 };
