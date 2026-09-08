@@ -84,7 +84,20 @@ const Navbar = () => {
                 : "translate-x-full"
             } sidebar`}
           >
-            <ul className="flex flex-col lg:items-center gap-4 px-1 lg:flex-row lg:p-0 font-semibold">
+            <Link
+              to="/"
+              className="text-2xl lg:text-[1.6rem] text-primary font-jakarta font-extrabold"
+              onClick={() => {
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                });
+              }}
+            >
+              edrylp
+            </Link>
+
+            <ul className="flex flex-col lg:items-center gap-4 px-1 lg:flex-row font-semibold mt-16">
               <NavLinks closeMenu={closeMenu} activeSection={activeSection} />
             </ul>
             < ThemeToggle />
