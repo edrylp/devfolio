@@ -84,16 +84,15 @@
 @layer base {
   h1 {
     @apply
-    mb-5
-    font-extrabold
+    mb-6
+    sm:mb-8
+    text-text
+    text-4xl
+    sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl
     font-jakarta
-    text-transparent 
-    bg-clip-text
-    bg-linear-primary-accent
+    font-extrabold 
+    tracking-tight leading-[1.08]
     animate-[fadeInUp_1s_ease]
-    text-[1.7rem]
-    md:text-[2.5rem]
-    lg:text-[4rem]
   }
 
   section {

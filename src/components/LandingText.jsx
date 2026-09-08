@@ -1,10 +1,10 @@
 const LandingText = () => {
   return (
-    <div className="col-span-12 md:col-span-7 lg:col-span-9 mx-auto mt-12 md:mt-0">
+    <div className="col-span-12 md:col-span-7 lg:col-span-9 mx-auto lg:ml-6 mt-12 md:mt-0">
       <div className="md:pr-8">
         <h1 className="flex flex-col">
-          <span>Full Stack</span>
-          <span>Web Developer<span>.</span></span>
+          <span className="text-transparent bg-clip-text bg-[linear-gradient(135deg,var(--primary)_0%,var(--accent)_70%,var(--secondary)_100%)]">Full Stack</span>
+          <span>Web Developer<span className="text-accent">.</span></span>
         </h1>
 
         <div
