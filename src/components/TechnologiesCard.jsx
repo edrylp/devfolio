@@ -25,9 +25,9 @@ const TechStackCard = ({ technology }) => {
   return (
     <div className="flex flex-col items-center justify-center gap-2 py-3 px-2 rounded-xl border border-transparent ">
       <div className="flex items-center justify-center">
-        <Icon className={`text-[4rem] ${color} ${background ?? "bg-transparent"}`} />
+        <Icon className={`text-3xl sm:text-[4rem] ${color} ${background ?? "bg-transparent"}`} />
       </div>
-      <p className="text-center text-text font-figtree m-0">
+      <p className="text-sm text-center text-text font-figtree m-0">
         {technology.name}
       </p>
     </div>
