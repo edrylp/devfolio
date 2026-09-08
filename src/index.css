@@ -207,6 +207,16 @@
     transition-all
     duration-200 ease-in-out
   }
+
+  .halo {
+    @apply shadow-[0_0_12px_var(--color-accent)] transition-all duration-400;
+    background: linear-gradient(
+      45deg,
+      color-mix(in srgb, var(--primary) 70%, transparent),
+      color-mix(in srgb, var(--accent) 70%, transparent),
+      color-mix(in srgb, var(--secondary) 40%, transparent)
+    );
+  }
 }
 
 :root {

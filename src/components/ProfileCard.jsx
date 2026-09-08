@@ -8,33 +8,30 @@ const ProfileCard = () => {
     >
       <div className="flex h-full flex-col items-center justify-center text-center animate-[fadeInUp_1s_ease]">
         <div
-            className="mb-5
-            size-62.5
-            overflow-hidden
-            rounded-full
-            border-[3px] border-accent/40
-            p-[0.3rem]
-            shadow-[0_0_12px_var(--color-accent)]
-            transition-all duration-1000
-            hover:-translate-y-2.5 hover:scale-105"
+            className="halo mb-5 p-1 rounded-full hover:-translate-y-2.5 hover:scale-105 "
         >
-          <img
-            src="/images/photo.webp"
-            alt="Edryl Palinis"
-            width={250}
-            height={250}
-            fetchpriority="high"
-            className="aspect-square h-full w-full rounded-full object-cover"
-          />
+          {/* For gap color*/}
+          <div className="rounded-full size-62.5 bg-background p-0.5 transition-colors duration-300">
+            <img
+              src="/images/photo.webp"
+              alt="Edryl Palinis"
+              width={250}
+              height={250}
+              fetchpriority="high"
+              className="aspect-square h-full w-full rounded-full object-cover"
+            />
+          </div>
         </div>
 
-        <p className="mb-1 text-2xl lg:text-3xl font-extrabold font-jakarta text-primary">
+        <p className="mt-3 text-2xl sm:text-3xl font-extrabold font-jakarta text-text tracking-tight">
           Edryl Palinis
         </p>
-        <p className="flex items-center gap-1 mb-4 font-figtree text-md text-text">
-          <PiMapPinLineLight className="text-md" />
+        <p className="flex items-center gap-1 font-inconsolata text-xs sm:text-sm text-text tracking-wide">
+          <PiMapPinLineLight className="text-md text-accent " />
           Bulacan, Philippines
         </p>
+
+        <div class="w-24 h-px bg-linear-to-r from-transparent via-text/20 to-transparent my-4 sm:my-6"></div>
 
         <Socials />
         
