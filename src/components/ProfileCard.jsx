@@ -4,7 +4,7 @@ import { PiMapPinLineLight } from "react-icons/pi";
 const ProfileCard = () => {
   return (
     <div
-      className="col-span-12 md:col-span-5 lg:col-span-3 mx-auto"
+      className="col-span-12 md:col-span-5 xl:col-span-3 mx-auto"
     >
       <div className="flex h-full flex-col items-center justify-center text-center animate-[fadeInUp_1s_ease]">
         <div
