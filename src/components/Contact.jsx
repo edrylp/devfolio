@@ -12,7 +12,7 @@ const Contact = () => {
         />
       </div>
 
-      <div className="px-5 md:px-0">
+    
         <div className="grid grid-cols-1 md:grid-cols-12 border border-primary/30 rounded-lg overflow-hidden">
           {/* Left Side */}
           <div className="col-span-5 flex flex-col gap-4 p-6 border-b border-primary/30 md:border-b-0 md:border-r justify-center">
@@ -40,7 +40,7 @@ const Contact = () => {
             <ContactForm />
           </div>
         </div>
-      </div>
+      
     </section>
   );
 };

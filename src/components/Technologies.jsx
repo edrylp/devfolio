@@ -14,7 +14,7 @@ const TechStack = () => {
         />
       </div>
 
-      <div className="grid gap-3 grid-cols-12 px-5 md:px-0 justify-center">
+      <div className="grid gap-3 grid-cols-12 md:px-0 justify-center">
         {technologies.map((technology) => (
             <div key={technology.id} className="col-span-4 md:col-span-3 lg:col-span-2">
                 <TechStackCard technology={technology} />
