@@ -9,9 +9,11 @@ const LandingText = () => {
 
         <div
           className="mb-6
+                border-l border-accent/70
+                pl-4
                 font-figtree
                 lg:text-[1.2rem]
-                text-tertiary
+                text-justify
                 animate-[fadeInUp_1s_ease_0.2s_backwards]"
         >
           <p className="mb-4">
@@ -21,7 +23,7 @@ const LandingText = () => {
             React, Node.js, Express, and MongoDB, and I'm always looking for
             ways to improve how I write and build web applications.
           </p>
-          <p className="mb-4">
+          <p>
             My journey into web development started as a career change, and a
             lot of my learning has come from self-study, hands-on projects, and
             simply spending time solving problems I don't understand yet. I'm

@@ -31,7 +31,7 @@ const ProfileCard = () => {
           Bulacan, Philippines
         </p>
 
-        <div class="w-24 h-px bg-linear-to-r from-transparent via-text/20 to-transparent my-4 sm:my-6"></div>
+        <div className="w-24 h-px bg-linear-to-r from-transparent via-text/20 to-transparent my-4 sm:my-6"></div>
 
         <Socials />
         
