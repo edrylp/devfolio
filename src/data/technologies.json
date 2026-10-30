@@ -1,0 +1,51 @@
+[
+     {
+        "id": 1,
+        "name": "React"
+    },
+{  
+        "id": 2,
+        "name": "JavaScript"
+    },
+    {  
+        "id": 3,
+        "name": "HTML"
+    },
+    {  
+        "id": 4,
+        "name": "CSS"
+    },
+
+    {
+        "id": 5,
+        "name": "Vue.js"
+    },
+    {
+        "id": 6,
+        "name": "Tailwind CSS"
+    },
+    {
+        "id": 7,
+        "name": "Express.js"
+    },
+    {
+        "id": 8,
+        "name": "Node.js"
+    },
+    {
+        "id": 9,
+        "name": "Postman"
+    },
+    {
+        "id": 10,
+        "name": "MongoDB"
+    },
+    {
+        "id": 11,
+        "name": "AWS"
+    },
+    {
+        "id": 12,
+        "name": "Bootstrap"
+    }
+]    

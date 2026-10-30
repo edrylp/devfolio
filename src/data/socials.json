@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "label": "LinkedIn",
+        "link": "https://linkedin.com/in/edrylpalinis",
+        "external": true,
+        "icon": "linkedin"
+    },
+    {
+        "id": 2,
+        "label": "GitHub",
+        "link": "https://github.com/edrylp",
+        "external": true,
+        "icon": "github"
+    },
+    {
+        "id": 2,
+        "label": "Email",
+        "link": "mailto:edrylpalinis@gmail.com",
+        "external": true,
+        "icon": "email"
+    }
+]

@@ -1,0 +1,317 @@
+@import "tailwindcss";
+
+/* Plus Jakarta Sans */
+@font-face {
+  font-display: swap; 
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/plus-jakarta-sans-v12-latin-regular.woff2') format('woff2'); 
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/plus-jakarta-sans-v12-latin-500.woff2') format('woff2'); 
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/plus-jakarta-sans-v12-latin-600.woff2') format('woff2'); 
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/plus-jakarta-sans-v12-latin-700.woff2') format('woff2'); 
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/plus-jakarta-sans-v12-latin-800.woff2') format('woff2'); 
+}
+
+/* Inconsolata */
+@font-face {
+  font-display: swap;
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/inconsolata-v37-latin-regular.woff2') format('woff2');
+}
+
+/* Figtree */
+@font-face {
+  font-display: swap;
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/figtree-v9-latin-regular.woff2') format('woff2');
+}
+
+@theme inline {
+  --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+  --font-inconsolata: 'Inconsolata', monospace;
+  --font-figtree: 'Figtree', sans-serif;
+
+  --color-background: var(--background);
+  --color-text: var(--text);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+
+  /* Linear gradients */
+  --background-image-linear-primary-secondary: var(--linear-primary-secondary);
+  --background-image-linear-primary-accent: var(--linear-primary-accent);
+  --background-image-linear-secondary-accent: var(--linear-secondary-accent);
+
+  /* Radial gradients */
+  --background-image-radial-primary-secondary: var(--radial-primary-secondary);
+  --background-image-radial-primary-accent: var(--radial-primary-accent);
+  --background-image-radial-secondary-accent: var(--radial-secondary-accent);
+}
+
+@layer base {
+  h1 {
+    @apply
+    mb-6
+    sm:mb-8
+    text-text
+    text-5xl
+    sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl
+    font-jakarta
+    font-extrabold 
+    tracking-tight leading-[1.08]
+    animate-[fadeInUp_1s_ease]
+  }
+
+  section {
+    @apply
+    container
+    mx-auto
+    px-5
+    md:px-8
+    xl:px-0
+    xl:max-w-325
+    py-12
+    md:py-24
+    lg:py-40
+  }
+  
+}
+
+@layer components {
+  .button-primary {
+    @apply
+    flex justify-center items-center
+    rounded-lg
+    text-center
+    font-figtree
+    text-background
+    bg-primary
+    border border-transparent
+    hover:shadow-[0_0_10px_var(--primary)]
+    active:translate-y-0.5
+    transition-all 
+    duration-300 
+  }
+
+  .button-secondary {
+    @apply
+    flex justify-center items-center
+    rounded-lg
+    text-center 
+    font-figtree
+    text-text
+    hover:text-accent
+    bg-primary/5 
+    border border-primary/20 
+    hover:border-accent/50
+    active:translate-y-0.5  
+    transition-all
+    duration-300
+  }
+
+  .icon-link {
+    @apply 
+    p-2
+    flex size-9.5
+    items-center justify-center
+    text-text/70
+    bg-background/40
+    rounded-lg
+    border border-text/12
+    hover:-translate-y-0.5
+    hover:border-accent/50
+    hover:text-accent
+    hover:bg-accent/10
+    active:translate-y-0.5
+    transition-all duration-300 ease-in-out
+  }
+
+  .nav-link {
+    @apply
+    flex
+    text-lg
+    text-text
+    font-figtree
+    font-light
+    bg-background
+    lg:bg-transparent
+    hover:bg-accent/30
+    lg:hover:bg-transparent
+    lg:hover:text-accent
+    rounded-2xl
+    lg:rounded-none
+    py-3 px-5
+    lg:p-0
+    items-center 
+    gap-4
+  }
+
+  .sidebar {
+    @apply
+    fixed
+    right-0 top-0 z-50 
+    h-screen w-72 
+    py-4
+    px-5 
+    bg-background  
+    transition-transform duration-300 ease-in-out
+    lg:hidden
+  }
+
+  .active {
+    @apply
+    relative
+    bg-accent lg:bg-transparent
+    hover:bg-accent lg:hover:bg-transparent
+    hover:brightness-110
+    text-background lg:text-text
+  }
+
+  .dot {
+    @apply
+    absolute
+    bg-accent  
+    w-1.5 
+    h-1.5 
+    rounded-full 
+    transition-all
+    duration-200 ease-in-out
+  }
+
+  .halo {
+    @apply shadow-[0_0_12px_var(--color-accent)] transition-all duration-400;
+    background: linear-gradient(
+      45deg,
+      color-mix(in srgb, var(--primary) 70%, transparent),
+      color-mix(in srgb, var(--accent) 70%, transparent),
+      color-mix(in srgb, var(--secondary) 40%, transparent)
+    );
+  }
+}
+
+:root {
+  --text: hsl(242, 65%, 9%);
+  --background: hsl(237, 68%, 94%);
+  --primary: hsl(241, 65%, 26%);
+  --secondary: hsl(311, 65%, 68%);
+  --accent: hsl(338, 66%, 42%);
+
+  /* Linear gradients */
+  --linear-primary-secondary: linear-gradient(
+    var(--primary),
+    var(--secondary)
+  );
+  --linear-primary-accent: linear-gradient(
+    var(--primary),
+    var(--accent)
+  );
+  --linear-secondary-accent: linear-gradient(
+    var(--secondary),
+    var(--accent)
+  );
+
+  /* Radial gradients */
+  --radial-primary-secondary: radial-gradient(
+    var(--primary),
+    var(--secondary)
+  );
+  --radial-primary-accent: radial-gradient(
+    var(--primary),
+    var(--accent)
+  );
+  --radial-secondary-accent: radial-gradient(
+    var(--secondary),
+    var(--accent)
+  );
+}
+
+.dark {
+  --text: hsl(242, 65%, 91%);
+  --background: hsl(237, 68%, 6%);
+  --primary: hsl(241, 65%, 74%);
+  --secondary: hsl(311, 65%, 32%);
+  --accent: hsl(338, 66%, 58%);
+
+  /* Linear gradients */
+  --linear-primary-secondary: linear-gradient(
+    var(--primary),
+    var(--secondary)
+  );
+  --linear-primary-accent: linear-gradient(
+    var(--primary),
+    var(--accent)
+  );
+  --linear-secondary-accent: linear-gradient(
+    var(--secondary),
+    var(--accent)
+  );
+
+  /* Radial gradients */
+  --radial-primary-secondary: radial-gradient(
+    var(--primary),
+    var(--secondary)
+  );
+  --radial-primary-accent: radial-gradient(
+    var(--primary),
+    var(--accent)
+  );
+  --radial-secondary-accent: radial-gradient(
+    var(--secondary),
+    var(--accent)
+  );
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+  background-color: var(--background);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
