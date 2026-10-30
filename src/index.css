@@ -84,78 +84,84 @@
 @layer base {
   h1 {
     @apply
-    mb-5
-    font-extrabold
+    mb-6
+    sm:mb-8
+    text-text
+    text-5xl
+    sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl
     font-jakarta
-    text-transparent 
-    bg-clip-text
-    bg-linear-primary-accent
+    font-extrabold 
+    tracking-tight leading-[1.08]
     animate-[fadeInUp_1s_ease]
-    text-[1.7rem]
-    md:text-[2.5rem]
-    lg:text-[4rem]
   }
 
   section {
     @apply
     container
     mx-auto
-    xl:max-w-[1300px]
-    py-[3rem] 
-    md:py-[6rem]
-    lg:py-[10rem]
+    px-5
+    md:px-8
+    xl:px-0
+    xl:max-w-325
+    py-12
+    md:py-24
+    lg:py-40
   }
   
 }
 
 @layer components {
-  .button-secondary {
-    @apply
-    flex justify-center items-center
-    rounded-md
-    text-center
-    font-figtree
-    text-text
-    hover:text-secondary
-    bg-secondary/40
-    hover:bg-background 
-    border border-transparent
-    hover:border hover:border-secondary 
-    transition-colors
-  }
-
   .button-primary {
     @apply
     flex justify-center items-center
-    rounded-md
+    rounded-lg
     text-center
     font-figtree
     text-background
-    hover:text-primary
     bg-primary
-    hover:bg-background 
     border border-transparent
-    hover:border hover:border-primary 
-    transition-colors
+    hover:shadow-[0_0_10px_var(--primary)]
+    active:translate-y-0.5
+    transition-all 
+    duration-300 
+  }
+
+  .button-secondary {
+    @apply
+    flex justify-center items-center
+    rounded-lg
+    text-center 
+    font-figtree
+    text-text
+    hover:text-accent
+    bg-primary/5 
+    border border-primary/20 
+    hover:border-accent/50
+    active:translate-y-0.5  
+    transition-all
+    duration-300
   }
 
   .icon-link {
     @apply 
-    p-1
-    flex size-[38px]
+    p-2
+    flex size-9.5
     items-center justify-center
-    rounded-full
-    border border-primary/50
-    text-primary/80
-    transition-all duration-250
-    hover:-translate-y-[3px]
-    hover:border-secondary
-    hover:text-secondary
+    text-text/70
+    bg-background/40
+    rounded-lg
+    border border-text/12
+    hover:-translate-y-0.5
+    hover:border-accent/50
+    hover:text-accent
+    hover:bg-accent/10
+    active:translate-y-0.5
+    transition-all duration-300 ease-in-out
   }
 
   .nav-link {
     @apply
-    block
+    flex
     text-lg
     text-text
     font-figtree
@@ -169,7 +175,7 @@
     lg:rounded-none
     py-3 px-5
     lg:p-0
-    flex items-center 
+    items-center 
     gap-4
   }
 
@@ -178,7 +184,7 @@
     fixed
     right-0 top-0 z-50 
     h-screen w-72 
-    py-[6rem]
+    py-4
     px-5 
     bg-background  
     transition-transform duration-300 ease-in-out
@@ -203,6 +209,16 @@
     rounded-full 
     transition-all
     duration-200 ease-in-out
+  }
+
+  .halo {
+    @apply shadow-[0_0_12px_var(--color-accent)] transition-all duration-400;
+    background: linear-gradient(
+      45deg,
+      color-mix(in srgb, var(--primary) 70%, transparent),
+      color-mix(in srgb, var(--accent) 70%, transparent),
+      color-mix(in srgb, var(--secondary) 40%, transparent)
+    );
   }
 }
 

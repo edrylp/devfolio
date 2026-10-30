@@ -4,7 +4,7 @@ import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
-    <section id="contact" className="lg:min-h-screen lg:flex lg:flex-col lg:items-center lg:justify-center">
+    <section id="contact" className="lg:min-h-screen lg:flex lg:flex-col lg:items-center lg:justify-center scroll-mt-10">
       <div>
         <SectionHeader
           title="Let's Connect"
@@ -12,10 +12,10 @@ const Contact = () => {
         />
       </div>
 
-      <div className="px-5 md:px-0">
+    
         <div className="grid grid-cols-1 md:grid-cols-12 border border-primary/30 rounded-lg overflow-hidden">
           {/* Left Side */}
-          <div className="col-span-5 flex flex-col gap-4 p-[2rem] border-b border-primary/30 md:border-b-0 md:border-r justify-center">
+          <div className="col-span-5 flex flex-col gap-4 p-6 border-b border-primary/30 md:border-b-0 md:border-r justify-center">
             <div className="flex justify-between items-center">
               <span className="text-3xl text-accent font-inconsolata uppercase">
                 Feedback Loop
@@ -40,7 +40,7 @@ const Contact = () => {
             <ContactForm />
           </div>
         </div>
-      </div>
+      
     </section>
   );
 };

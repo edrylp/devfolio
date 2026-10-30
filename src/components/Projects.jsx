@@ -4,7 +4,7 @@ import SectionHeader from "./SectionHeader";
 
 const Projects = () => {
   return (
-    <section id="projects">
+    <section id="projects" className="scroll-mt-10">
       <div>
         <SectionHeader
           title="Selected Work"
@@ -12,7 +12,7 @@ const Projects = () => {
         />
       </div>
 
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 px-5 md:px-0 ">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 ">
         {projects.map((project) => (
           <div key={project.id}>
             <ProjectCard project={project} />

@@ -78,7 +78,7 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="p-[2rem]">
+    <form onSubmit={handleSubmit} className="p-6">
       <div className="flex flex-col mb-5">
         <label className="text-xl text-text font-jakarta font-bold mb-2">
           Name
@@ -139,12 +139,12 @@ const ContactForm = () => {
         </span>
       </div>
 
-      <button type="submit" disabled={isLoading} className="button-primary w-full flex justify-center items-center gap-1 px-6 py-2 lg:text-xl font-bold">
+      <button type="submit" disabled={isLoading} className="group button-primary w-full flex justify-center items-center gap-1 px-6 py-2 lg:text-xl cursor-pointer">
         {isLoading ? ( 
           "Sending..." 
           ) : (
             <>
-            Send Message <LuSend />
+            Send Message <LuSend className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"/>
             </>
             )} 
       </button>

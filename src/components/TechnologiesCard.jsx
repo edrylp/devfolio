@@ -11,7 +11,7 @@ const techIcons = {
   AWS: { icon: FaAws, color: "text-[#FF9900]" },
   JavaScript: { icon: SiJavascript, color: "text-[#F7DF1E]", background: "bg-black" },
   MongoDB: { icon: SiMongodb, color: "text-[#47A248]" },
-  "Express.js": { icon: SiExpress, color: "text-[#000000]" },
+  "Express.js": { icon: SiExpress, color: "text-text" },
   Postman: { icon: SiPostman, color: "text-[#FF6C34]" },
   "Tailwind CSS": { icon: SiTailwindcss, color: "text-[#06B6D4]" }
 };
@@ -23,11 +23,11 @@ const TechStackCard = ({ technology }) => {
   const background = tech.background;
 
   return (
-    <div className="flex flex-col items-center justify-center gap-[0.5rem] py-3 px-2 rounded-xl border border-transparent ">
+    <div className="flex flex-col items-center justify-center gap-2 py-3 px-2 rounded-xl border border-transparent ">
       <div className="flex items-center justify-center">
-        <Icon className={`text-[4rem] ${color} ${background ?? "bg-transparent"}`} />
+        <Icon className={`text-3xl sm:text-[4rem] ${color} ${background ?? "bg-transparent"}`} />
       </div>
-      <p className="text-center text-text font-figtree m-0">
+      <p className="text-sm text-center text-text font-figtree m-0">
         {technology.name}
       </p>
     </div>

@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="w-full">
-      <div className="container mx-auto flex xl:max-w-[1300px] min-h-16 items-center justify-between px-6 md:px-0">
+      <div className="container mx-auto flex xl:max-w-325 min-h-16 items-center justify-between px-5 md:px-8 xl:px-0">
         
         {/* Copyright */}
         <p className="font-figtree text-text/60 md:text-lg">
@@ -13,7 +13,7 @@ const Footer = () => {
           
           {/* GitHub */}
           <a
-            href="https://github.com/deyperfect"
+            href="https://github.com/edrylp"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub Profile"
