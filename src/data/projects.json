@@ -1,12 +1,12 @@
 [
     {
         "id": 1,
-        "title": "Lapis",
-        "description": "A full-stack blog application built with Vue 3 and a Node.js/Express backend. Users can register, authenticate, and create or manage posts through a responsive interface powered by Pinia state management and MongoDB.",
-        "image": "/images/lapis.webp",
-        "alt": "Lapis Blog Application Thumbnail",
-        "code": "https://github.com/edrylp/lapis",
-        "demo": "https://lapis-blush.vercel.app/",
+        "title": "Allure",
+        "description": "A companion services marketplace built with Vue 3 and Node.js, featuring role-based access, JWT authentication, service browsing, cart management, and appointment booking, with dedicated interfaces for customers and administrators.",
+        "image": "/images/allure.webp",
+        "alt": "Allure Application Thumbnail",
+        "code": "https://github.com/edrylp/allure",
+        "demo": "https://allure-neon.vercel.app/",
         "tech": [
             "Vue",
             "Express.js",
