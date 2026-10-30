@@ -1,15 +1,16 @@
 # Devfolio
 
-My professional portfolio website built with Vue 3 and Vite.
+My personal developer portfolio built with React, Vite, and Tailwind CSS.
 
-This project showcases who I am as a developer, the projects I have built, the technologies I work with, and the progress I am making as I continue growing into production-ready full-stack development. 
+This portfolio showcases who I am as a developer, the projects I've built, the technologies I work with, and the progress I'm making as I continue growing into full-stack development.
+
+**Live Portfolio:** [edrylp.vercel.app](https://edrylp.vercel.app)
 
 ## About 
 
 This portfolio highlights:
 
-- featured personal and academic projects
-- coding challenges that document ongoing practice
+- personal projects
 - a curated tech stack section
 - a contact form for direct outreach
 - a downloadable resume
@@ -18,12 +19,21 @@ The content is intentionally data-driven, which makes it easy to keep the portfo
 
 ## Built With
 
-- Vue 3
-- Vue Router
+**Frontend**
+- React 19
+- React Router 7
 - Vite
-- Bootstrap 5
+- Tailwind CSS 4
+- React Icons
+
+**Backend & Services**
+- Node.js
+- Express 5
+- Resend
+
+**Utilities**
 - Notyf
-- Nodemailer
+- dotenv
 
 ## Project Structure
 
@@ -35,9 +45,10 @@ devfolio/
 │   ├── assets/          # Global styles
 │   ├── components/      # Reusable UI sections and cards
 │   ├── data/            # Portfolio content stored as JSON
+│   ├── hooks/           # useActiveSection hook
 │   ├── pages/           # Route-level pages
 │   ├── App.vue
-│   └── main.js
+│   └── main.jsx
 ├── index.html
 ├── vite.config.js
 └── package.json
@@ -79,34 +90,40 @@ npm run preview
 To enable the contact form email handler, create a `.env` file in the project root:
 
 ```env
-EMAIL_USER=your-gmail-address
-EMAIL_PASS=your-app-password
+EMAIL_USER=your-email-address
+RESEND_API_KEY=your-Resend-APIKey
 ```
 
-These variables are used by [`api/contact.js`](/Users/dey/Developer/GitHub/devfolio/api/contact.js) to send form submissions through Gmail via Nodemailer.
+These variables are used by [`api/contact.js`](/Users/dey/Developer/GitHub/devfolio/api/contact.js) to send form submissions via Resend.
 
 ## Updating Portfolio Content
 
 Most of the portfolio content can be updated from the JSON files in [`src/data`](/Users/dey/Developer/GitHub/devfolio/src/data):
 
 - [`src/data/projects.json`](/Users/dey/Developer/GitHub/devfolio/src/data/projects.json) for featured projects
-- [`src/data/challenges.json`](/Users/dey/Developer/GitHub/devfolio/src/data/challenges.json) for coding challenges
-- [`src/data/techStack.json`](/Users/dey/Developer/GitHub/devfolio/src/data/techStack.json) for the tech stack section
+- [`src/data/socials.json`](/Users/dey/Developer/GitHub/devfolio/src/data/socials.json) for social links
+- [`src/data/technologies.json`](/Users/dey/Developer/GitHub/devfolio/src/data/technologies.json) for the tech stack section
 
 Main page sections and copy can be updated in [`src/components`](/Users/dey/Developer/GitHub/devfolio/src/components) and route-level views in [`src/pages`](/Users/dey/Developer/GitHub/devfolio/src/pages).
 
 ## Contact Form
 
-The contact form UI is implemented in [`src/components/Contact.vue`](/Users/dey/Developer/GitHub/devfolio/src/components/Contact.vue), and submissions are handled by [`api/contact.js`](/Users/dey/Developer/GitHub/devfolio/api/contact.js).
+The contact form UI is implemented in the contact section components, while submissions are handled by api/contact.js.
 
-If you are using Gmail, use an app password instead of your normal account password.
+The API endpoint uses Resend to process and send email submissions.
+
+For local development, make sure your Resend API key is configured in .env. For production, configure it through Vercel environment variables.
 
 ## Notes
 
-- Static assets, images, fonts, and `resume.pdf` live in [`public/`](/Users/dey/Developer/GitHub/devfolio/public)
-- Navigation combines route-based pages with section links on the home page
-- The repository was successfully verified with `npm run build`
+- Static assets, images, fonts, and resume.pdf are stored in public/.
+- The portfolio supports light and dark themes.
+- Navigation supports section-based scrolling and active section indicators.
+- The project uses reusable React components and custom hooks to keep the code organized.
+- The production build can be verified using npm run build.
 
 ## Purpose
 
-This repository is more than a site build. It reflects my approach to web development, project presentation, and continuous learning. As I build more applications and strengthen my full-stack skills, this portfolio grows with me.
+This repository is more than a portfolio website. It reflects my approach to building applications, solving problems, and continuously improving as a developer.
+
+As I work on more projects and strengthen my full-stack development skills, this portfolio grows with me.
