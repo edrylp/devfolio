@@ -1,6 +1,10 @@
 import projects from "../data/projects.json";
 import ProjectCard from "./ProjectCard.jsx";
+import FeaturedCard from "./FeaturedCard.jsx";
 import SectionHeader from "./SectionHeader";
+
+const featuredProjects = projects.filter((project) => project.featured);
+const regularProjects = projects.filter((project) => !project.featured);
 
 const Projects = () => {
   return (
@@ -12,8 +16,16 @@ const Projects = () => {
         />
       </div>
 
+      <div className="grid grid-cols-1 gap-6 ">
+        {featuredProjects.map((project) => (
+          <div key={project.id}>
+            <FeaturedCard project={project} />
+          </div>
+        ))}
+      </div>
+      
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 ">
-        {projects.map((project) => (
+        {regularProjects.map((project) => (
           <div key={project.id}>
             <ProjectCard project={project} />
           </div>
