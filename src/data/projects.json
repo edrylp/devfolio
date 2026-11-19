@@ -1,6 +1,26 @@
 [
     {
         "id": 1,
+        "title": "Venta",
+        "description": "A C2C marketplace for used PC components in the Philippines, currently in development. The REST API is built with Node.js, Express and MongoDB: JWT authentication with server-side logout revocation, listing management with an admin approval workflow, direct-to-S3 photo uploads via pre-signed URLs, and buyer-seller messaging (in progress). The React frontend and AWS Lambda deployment are next.",
+        "image": "/images/venta.webp",
+        "alt": "Venta design mockup",
+        "code": "https://github.com/edrylp/venta-dev",
+        "demo": "",
+        "tech": [
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Mongoose",
+            "JWT",
+            "AWS S3"
+        ],
+        "external": true,
+        "featured": true,
+        "status": "In Progress"
+    },
+    {
+        "id": 2,
         "title": "Allure",
         "description": "A companion services marketplace built with Vue 3 and Node.js, featuring role-based access, JWT authentication, service browsing, cart management, and appointment booking, with dedicated interfaces for customers and administrators.",
         "image": "/images/allure.webp",
@@ -16,32 +36,32 @@
         "external": true
     },
     {
-        "id": 2,
-        "title": "Further",
-        "description": "A horror, mystery, and thriller movie collection app built with Vue that focuses on organizing dark-themed films. The application features a clean interface for browsing movies and viewing structured film data.",
-        "image": "/images/further.webp",
-        "alt": "Further Thumbnail",
-        "code": "https://github.com/edrylp/further",
-        "demo": "https://further-eight.vercel.app/",
+        "id": 3,
+        "title": "Daily Coding Challenges",
+        "description": "A daily coding practice repository focused on strengthening problem-solving skills and programming fundamentals through Codewars challenges. Each challenge is solved first in JavaScript and then independently in Python, reinforcing logical thinking and familiarity with different approaches to solving problems.",
+        "image": "/images/coding.webp",
+        "alt": "Daily Coding Challenges Thumbnail",
+        "code": "https://github.com/edrylp/daily-coding-challenges",
+        "demo": "https://wanted-minds.vercel.app/",
         "tech": [
-            "Vue",
-            "Express.js",
-            "MongoDB",
-            "Bootstrap"
+            "JavaScript",
+            "Python"
         ],
         "external": true
     },
     {
-        "id": 3,
-        "title": "Wanted Minds",
-        "description": "A sleek, modern website for Wanted Minds, a fictional private detective agency operating in the heart of downtown Tokyo. This single-page React application showcases the agency's services, team members, and provides a contact interface.",
-        "image": "/images/wantedminds.webp",
-        "alt": "Wanted Minds Thumbnail",
-        "code": "https://github.com/edrylp/Wanted-Minds",
-        "demo": "https://wanted-minds.vercel.app/",
+        "id": 4,
+        "title": "Compliance Portfolio",
+        "description": "A responsive professional portfolio built with Vue 3 to showcase compliance experience, professional projects, certifications, and technical skills. Features a modular component-based architecture, JSON-driven content management, and a serverless contact form.",
+        "image": "/images/compliance.webp",
+        "alt": "Compliance Portfolio Thumbnail",
+        "code": "https://github.com/edrylp/compliance-portfolio",
+        "demo": "https://edryl.vercel.app/",
         "tech": [
-            "React",
-            "Bootstrap"
+            "Vue",
+            "Bootstrap",
+            "Vercel",
+            "Nodemailer"
         ],
         "external": true
     }
